@@ -1,62 +1,68 @@
 body {
-  background-color: rgb(55, 55, 56);
-  width: 100%;
-  height: 100%;
+  background-color: rgba(255, 255, 215, 0.8);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .container {
   display: flex;
-  /* border: 1px solid white; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  font-size: 22px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.calculator {
+.screen {
   display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
+  align-items: end;
+  justify-content: flex-end;
+  height: 50px;
+  width: 230px;
+  border: 2px solid #d6a3fb;
+  border-radius: 3%;
+  margin: 5px;
+}
+
+.button {
+  display: flex;
+  box-sizing: border-box;
   align-items: center;
-  justify-content: space-between;
-  border: 1px solid white;
-  margin-top: 15%;
-  padding: 5%;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #abf62d;
   border-radius: 3%;
-}
-button {
-  width: 75px;
-  height: 75px;
-  border-radius: 3%;
-  color: black;
-  font-weight: 500;
-  background-color: rgb(194, 186, 75);
-  font-size: 19px;
-  /* border: 3px solid black; */
+  margin: 5px;
 }
 
-#screen {
+.button-clear,
+.button-delete {
   display: flex;
-  border: 5px solid black;
-  background-color: whitesmoke;
-  margin-bottom: 4px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 50px;
+  border: 2px solid #ff6a3d;
   border-radius: 3%;
-  border: 1px solid black;
-  width: 312px;
-  height: 60px;
-  font-size: 25px;
-  align-items: flex-end;
-  justify-content: end;
+  margin: 5px;
 }
 
-#clear,
-#delete {
+.button-operator {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
   border-radius: 3%;
-  height: 75px;
-  width: 156px;
-  font-size: 30px;
-}
-
-#clear {
-  background-color: rgb(75, 194, 91);
-}
-
-#delete {
-  background-color: rgb(223, 79, 79);
+  margin: 5px;
+  border: 2px solid #f4db7d;
 }
