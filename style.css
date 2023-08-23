@@ -3,6 +3,8 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+/* main box of the calculator  */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -12,57 +14,82 @@ body {
   font-size: 22px;
 }
 
+/* the rows of the calculator  */
+
 .row {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* display of the calculator */
+
 .screen {
   display: flex;
   box-sizing: border-box;
   align-items: end;
   justify-content: flex-end;
-  height: 50px;
-  width: 230px;
+  height: 75px;
+  width: 245px;
   border: 2px solid #d6a3fb;
   border-radius: 3%;
   margin: 5px;
 }
+
+/* the buttons of the numbers */
 
 .button {
   display: flex;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   border: 2px solid #abf62d;
   border-radius: 3%;
   margin: 5px;
 }
 
-.button-clear,
-.button-delete {
+.button:hover {
+  background-color: #d2ff84;
+}
+
+/* the AC button */
+
+.button-clear {
   display: flex;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  width: 110px;
-  height: 50px;
-  border: 2px solid #ff6a3d;
+  width: 75px;
+  height: 75px;
+  border: 2px solid salmon;
   border-radius: 3%;
   margin: 5px;
 }
 
-.button-operator {
+.button-clear:hover {
+  background-color: rgb(255, 151, 120);
+}
+
+/* the operator buttons  */
+
+.button-operator,
+.button-decimal,
+.button-equals {
   display: flex;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   border-radius: 3%;
   margin: 5px;
   border: 2px solid #f4db7d;
+}
+
+.button-operator:hover,
+.button-decimal:hover,
+.button-equals:hover {
+  background-color: #ffe99a;
 }
